@@ -1,0 +1,68 @@
+        <div class="table-responsive">
+            <table class="table">
+            <tr>
+                <td>
+                    <div class="table-responsive">
+                    <table class="table">
+                        <tr>
+                            <td rowspan="2">
+                                <div class="boader">
+                                    <img class="img-rounded" width='160' height='160' src="<%=item.getPicture()%>" alt=""/>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+                </td>
+                <td>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <div class="boader">
+                                        <%=item.getName()%>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="boader">
+                                        价格： <%=s1.format(item.getPrice())%>¥
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <div class="boader">
+                                        购买数量：
+                                        <label for="number"></label><input type="text" class="form-control" id="number" name="number" value="1" size="2"/>
+                                    </div>
+                                    <div class="boader">
+                                        <div class="boader">
+                                            <button type="button" class="btn btn-danger" id="sub" onclick="sub();">-</button>
+                                        </div>
+                                        <div class="boader">
+                                            <button type="button" class="btn btn-danger" id="add" onclick="add();">+</button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="boader">
+                                        <button type="button" class="btn btn-danger" onclick="window.open('buy_success.jsp')">立刻购买</button>
+                                        <button type="button" class="btn btn-warning" onclick="selflog_show(<%=item.getId()%>)">加入购物车</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        </div>

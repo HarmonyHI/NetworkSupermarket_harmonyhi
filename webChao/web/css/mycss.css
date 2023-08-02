@@ -1,0 +1,122 @@
+body{
+    background-color: #e9e7ea;
+}
+hr{
+    width: 600px;
+}
+.whole{
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    margin: 20px 50px 20px 50px;
+}
+.myhead{
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    margin: 20px 50px 20px 50px;
+}
+.p_left{
+    float:left;
+    display:inline;
+}
+.p_right{
+    float:left;
+    display:inline;
+    margin: 4px;
+}
+.checkcode{
+    margin: 0 15px 0 15px;
+}
+.cart_item{
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    margin: 20px 40px 20px 40px;
+}
+
+.boader{
+    margin: 20px 20px 20px 20px;
+}
+.boader_sm{
+    margin: 7px 7px 7px 7px;
+}
+.max_fit{
+    max-width: 500px;
+}
+.item{
+    width: 200px;
+    height: 800px;
+    background:#ccc;
+    padding-bottom:20px;
+}
+.item dl{
+    width:180px;
+    margin:20px 0 0 20px;
+    float:left;
+    background:red;
+}
+.item dt{
+    width:180px;
+    margin:10px;
+    height:120px;
+    background:#FFF;
+}
+.item dd{
+    width:80px;
+    margin:0 0 10px 10px;
+    height:30px;
+    line-height:30px;
+    background:#FFFFFF;
+    text-align:center;
+}
+.square_btn {
+    position: relative;
+    height: 45px;
+    width: 200px;
+    background: #fff;
+    color: #00405e;
+    text-align: center;
+    line-height: 45px;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.square_btn::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 1px;
+    right: -2px;
+    top: -2px;
+    background-color: #003e59;
+    z-index: -1;
+    transition: width .4s linear, height .4s linear;
+}
+.square_btn:hover::before {
+    content: "";
+    transition: width .4s linear, height .4s linear;
+    width: 201px;
+    height: 46px;
+}
+.square_btn::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 1px;
+    left: -2px;
+    bottom: -2px;
+    background-color: #004069;
+    z-index: -1;
+    transition: width .4s linear, height .4s linear;
+}
+.square_btn:hover::after {
+    content: "";
+    transition: width .4s linear, height .4s linear;
+    width: 201px;
+    height: 46px;
+}

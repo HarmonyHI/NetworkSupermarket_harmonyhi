@@ -1,0 +1,79 @@
+            for (Cart_item good : goods) {
+        %>
+        <div class="boader">
+            <a href="products_details.jsp?id=<%=good.getGoods_id()%>">
+                <dl>
+                    <dt>
+                        <div class="boader_sm">
+                            <img class="img-rounded" width='100' height='100' src="<%=good.getPicture()%>" alt=""/>
+                        </div>
+                    </dt>
+                    <dd>
+                        <h2>
+                            <%=good.getName()%>
+                        </h2>
+                    </dd>
+                    <dd>
+                        已选型号:<%=good.getGoods_type_id()%>
+                    </dd>
+                    <dd>
+                        折扣:<%=s1.format(good.getDiscount())%>
+                    </dd>
+                    <dd>
+                        价格:¥<%=s1.format(good.getPrice())%>
+                    </dd>
+                    <dd>
+                        数量:¥<%=s1.format(good.getGoods_number())%>
+                    </dd>
+                </dl>
+            </a>
+        </div>
+        <%
+            }
+
+
+
+
+                                int iter=1;
+                                int wid=5;
+                            for (Cart_item good : goods) {
+                            %>
+                            <%if(iter%wid==1){%>
+                            <tr>
+                                <%}%>
+                                <td>
+                                <div class="boader">
+                                    <a href="products_details.jsp?id=<%=good.getGoods_id()%>">
+                                        <dl>
+                                            <dt>
+                                                <div class="boader_sm">
+                                                    <img class="img-rounded" width='100' height='100' src="<%=good.getPicture()%>" alt=""/>
+                                                </div>
+                                            </dt>
+                                            <dd>
+                                                <h2>
+                                                    <%=good.getName()%>
+                                                </h2>
+                                            </dd>
+                                            <dd>
+                                                已选型号:<%=good.getGoods_type_id()%>
+                                            </dd>
+                                            <dd>
+                                                折扣:<%=s1.format(good.getDiscount())%>
+                                            </dd>
+                                            <dd>
+                                                价格:¥<%=s1.format(good.getPrice())%>
+                                            </dd>
+                                            <dd>
+                                                数量:¥<%=s1.format(good.getGoods_number())%>
+                                            </dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                                </td>
+                                <%if((iter+1)%wid==1){%>
+                            </tr>
+                            <%}%>
+                            <%
+                                        iter++;
+                                    }
